@@ -6,7 +6,7 @@ For example
 ##### This is taken from http://mranderson.nl/2018/10/24/git-hook-commit-message/ but updated because the script was broken
 
 # Git alias set up instructions
-- edit ```~/.gitconfig``` file and add the line found at https://github.com/ovidio-peduri/git-hook-prepend-issue-tag/blob/master/.gitconfig#L1-L3
+- edit ```~/.gitconfig``` file and add the line found at https://github.com/ovidio-peduri/git-hook-prepend-issue-tag/blob/master/config-example/.gitconfig#L1-L3
 - save
 - now when you run ```git po``` it will run ```git push --set-upstream origin branchName```
 
