@@ -1,0 +1,7 @@
+[alias]
+# This sets your upstream to origin/branch-name
+	po = "!git push --set-upstream origin \"$(git rev-parse --abbrev-ref HEAD)\""
+[init]
+	templatedir = ~/.git-templates
+[core]
+	hooksPath = ~/.git-templates/hooks
