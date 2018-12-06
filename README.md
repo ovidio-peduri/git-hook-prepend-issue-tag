@@ -1,5 +1,7 @@
 # git-hook-prepend-issue-tag
-Git hook for prefixing branch/issue name
+This repo explains how to set up git hooks to automatically prepend your git messages with your work item's issue number.
+For example
+- For a branch ```somthing/W-123456``` it will prepend the message with ```W-123456```
 
 ##### This is taken from http://mranderson.nl/2018/10/24/git-hook-commit-message/ but updated because the script was broken
 
