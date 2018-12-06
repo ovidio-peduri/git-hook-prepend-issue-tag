@@ -3,9 +3,15 @@ Git hook for prefixing branch/issue name
 
 ##### This is taken from http://mranderson.nl/2018/10/24/git-hook-commit-message/ but updated because the script was broken
 
-# Set up instructions
+# Git alias set up instructions
+- edit ```~/.gitconfig``` file and add the line found at https://github.com/ovidio-peduri/git-hook-prepend-issue-tag/blob/master/.gitconfig#L1-L3
+- save
+- now when you run ```git po``` it will run ```git push --set-upstream origin branchName```
+
+# Git Hooks set up instructions
 
 ### Global Setup
+If you wish to have your git commit messages prepended across all repositories do the following
 Make the following directory
 ```
 mkdir ~/.git-templates/hooks
@@ -16,8 +22,6 @@ mkdir ~/.git-templates/hooks
 - Make the file executable
 - ```chmod a+x ~/.git-templates/hooks/prepare-commit-msg  ```
 
-
-If you wish to have your git commit messages prepended across all repositories do the following
 ```
 git config --global init.templatedir '~/.git-templates'
 git config --global core.hooksPath '~/.git-templates/hooks'
